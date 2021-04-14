@@ -20,7 +20,7 @@
 | image      | string        | null: false |
 | name       | string        | null: false |
 | price      | integer       |             |
-| delivery   | integer       | null: false |
+| delivery   | string        | null: false |
 | detail     | text          |             |
 | user       | references    |             |
 
