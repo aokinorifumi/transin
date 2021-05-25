@@ -1,0 +1,30 @@
+<%= form_with model: @item, url: items_path, method: :post, local: true do |f|%>
+  <div class="field">
+    <%= f.label :name, "名称(分類)" %><br />
+    <%= f.text_field :name, id:"prototype_title" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :price, "価格" %><br />
+    <%= f.text_field :price, class: :form__text, id:"prototype_catch_copy" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :delivery, "到着日" %><br />
+    <%= f.text_field :delivery, class: :form__text, id:"prototype_concept" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :detail, "詳細情報" %><br />
+    <%= f.text_area :detail, class: :form__text, id:"prototype_concept" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image, "詳細画像" %><br />
+    <%= f.file_field :image, id:"prototype_image" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "保存する", class: :form__btn  %>
+  </div>
+<% end %>

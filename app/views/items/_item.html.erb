@@ -1,0 +1,13 @@
+<div class="card">
+  <%= link_to image_tag(item.image, class: :card__img ), root_path%>
+  <div class="card__body">
+    <%= link_to item.name, root_path, class: :card__title%>
+    <p class="card__summary">
+      <span><%= item.price %>円<br></span>
+    </p>
+    <%= link_to item.delivery, root_path, class: :card__title%>
+    <p class="card__summary">
+      <span><%= item.detail %><br></span>
+    </p>
+  </div>
+</div>
