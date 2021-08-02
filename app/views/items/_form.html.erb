@@ -1,4 +1,10 @@
 <%= form_with model: @item, url: items_path, method: :post, local: true do |f|%>
+  <div class="weight-bold-text">
+    カテゴリー
+    <span class="indispensable">必須</span><br />
+  <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+  </div>
+
   <div class="field">
     <%= f.label :name, "名称(分類)" %><br />
     <%= f.text_field :name, id:"prototype_title" %>
@@ -9,9 +15,22 @@
     <%= f.text_field :price, class: :form__text, id:"prototype_catch_copy" %>
   </div>
 
-  <div class="field">
-    <%= f.label :delivery, "到着日" %><br />
-    <%= f.text_field :delivery, class: :form__text, id:"prototype_concept" %>
+  <div class="weight-bold-text">
+    月
+    <span class="indispensable">必須</span><br />
+  <%= f.collection_select(:delivery_month_id, Delivery_month.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+  </div>
+  
+  <div class="weight-bold-text">
+    日
+    <span class="indispensable">必須</span><br />
+  <%= f.collection_select(:delivery_day_id, Delivery_day.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+  </div>
+
+  <div class="weight-bold-text">
+    時間
+    <span class="indispensable">必須</span><br />
+  <%= f.collection_select(:delivery_time_id, Delivery_time.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
   </div>
 
   <div class="field">

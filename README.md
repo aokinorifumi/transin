@@ -45,14 +45,17 @@ git cloneしてから、ローカルで動作をさせるまでに必要なコ�
 
 ## item テーブル
 
-| Column     | Type          | Options     |
-| ---------- | ------------- | ----------- |
-| image      | string        | null: false |
-| name       | string        | null: false |
-| price      | integer       |             |
-| delivery   | string        | null: false |
-| detail     | text          |             |
-| user       | references    |             |
+| Column            | Type          | Options     |
+| ----------------- | ------------- | ----------- |
+| image             | string        | null: false |
+| category          | integer       | null: false |
+| name              | string        | null: false |
+| price             | integer       | null: false |
+| delivery_month_id | integer       | null: false |
+| delivery_day_id   | integer       | null: false |
+| delivery_time_id  | integer       | null: false |
+| detail            | text          |             |
+| user              | references    |             |
 
 ### Association
 

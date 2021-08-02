@@ -134,6 +134,19 @@ a {
   cursor: pointer;
 }
 
+/*アクティブハッシュ */
+
+.weight-bold-text {
+  font-weight: bold;
+  min-width: 170px;
+  margin-bottom: 10px;
+}
+
+.select-box {
+  margin: 2vh 0;
+}
+
+
 /* メイン */
 
 .greeting{

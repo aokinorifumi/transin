@@ -5,7 +5,11 @@
     <p class="card__summary">
       <span><%= item.price %>円<br></span>
     </p>
-    <%= link_to item.delivery, root_path, class: :card__title%>
+    <div class="card__day">
+    <%= link_to item.delivery_month.name, root_path, class: :card__title%>
+    <%= link_to item.delivery_day.name, root_path, class: :card__title%>
+    <%= link_to item.delivery_time.name, root_path, class: :card__title%>
+    </div>
     <p class="card__summary">
       <span><%= item.detail %><br></span>
     </p>
