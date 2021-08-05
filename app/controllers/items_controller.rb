@@ -25,7 +25,7 @@ class ItemsController < ApplicationController
   end
 
   def search
-    @results = @p.result.includes(:item)
+    @results = @p.result
   end
 
 
