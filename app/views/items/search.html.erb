@@ -5,9 +5,10 @@
 <% if @results.length !=0 %>
   <div class="inner">
     <div class="card__wrapper">
-      <%= render partial: 'item', collection: @results %>
+      <%= render partial: 'result', collection: @results %>
     </div>
   </div>
+<% else %>
+<br>検索結果なし
 <% end %>
-<br>
 <%= link_to 'トップページへ戻る', root_path %>

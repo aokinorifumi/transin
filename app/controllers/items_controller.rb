@@ -41,6 +41,7 @@ class ItemsController < ApplicationController
 
   def set_item_column
     @item_category = Item.select("category").distinct
+    @item_delivery_day = Item.select("delivery_day").distinct
   end
 
 
