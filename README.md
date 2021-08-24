@@ -41,6 +41,7 @@ git cloneしてから、ローカルで動作をさせるまでに必要なコ�
 ### Association
 
 - has_many :items
+- has_many :posts
 
 
 ## item テーブル
@@ -55,6 +56,18 @@ git cloneしてから、ローカルで動作をさせるまでに必要なコ�
 | delivery_day_id   | integer       | null: false |
 | delivery_time_id  | integer       | null: false |
 | detail            | text          |             |
+| user              | references    |             |
+
+### Association
+
+- belongs_to :user
+
+
+## post テーブル
+
+| Column            | Type          | Options     |
+| ----------------- | ------------- | ----------- |
+| content           | text          | null: false |
 | user              | references    |             |
 
 ### Association
