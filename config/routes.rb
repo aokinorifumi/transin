@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  get 'items/search'
   root to: "items#index"
-  resources :items, only: [:index, :new, :create, :show]
+  get 'posts/index'
+  get 'items/search'
+  post 'posts', to: 'posts#create'
+  resources :items, only: [:index, :new, :create, :show] do
+    resources :posts, only: [:index]
+  end
 end
