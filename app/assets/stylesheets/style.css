@@ -349,6 +349,18 @@ a {
   font-size: 10px;
 }
 
+/* TODOコメント */
+.post{
+  border: 1px solid;
+  width: 40%;
+  margin-top: 30px;
+}
+
+.post-date{
+  color: gray;
+}
+
+
 /* タブレット対応 */
 @media (max-width: 1024px) {
   .inner {
