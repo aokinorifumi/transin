@@ -350,15 +350,69 @@ a {
 }
 
 /* TODOコメント */
-.post{
-  border: 1px solid;
+
+.todomain{
+  min-height: calc(100vh - 150px);
+}
+
+.area{
+  margin: 10px auto;
+  width: 50%;
+  
+}
+
+.enter{
+  margin-bottom: 40px;
+  width: 50%;
+  margin: 0 auto;
+  
+}
+
+#todo__btn{
+  margin-left: 15px;
+}
+
+#todo__btn2{
+  margin-left: 35px;
+}
+
+.todo__text {
+  width: 100%;
+}
+
+.schedule{
+  width: 100vw;
+  color:black;
+  display: flex;
+  justify-content: space-around;
+}
+
+.schedule1{
   width: 40%;
+}
+
+.schedule2{
+  width: 40%;
+}
+
+
+.post1{
+  border: 1px solid;
   margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.post2{
+  border: 1px solid;
+  margin-top: 30px;
+  margin-bottom: 5px;
 }
 
 .post-date{
   color: gray;
 }
+
+
 
 
 /* タブレット対応 */
