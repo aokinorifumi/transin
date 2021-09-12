@@ -327,7 +327,7 @@ a {
 }
 
 .purchase-btn-text {
-  color: #fff;
+  color: rgb(255, 255, 255);
   display: block;
   font-size: 18px;
   text-decoration: none;
@@ -340,7 +340,7 @@ a {
 
 
 .footer {
-  background-color: #999;
+  background-color: #abb1b5;
   padding: 10px 0;
 }
 .copyright {

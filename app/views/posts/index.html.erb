@@ -22,8 +22,8 @@
     <div class="post1">
       <div class="post-date">
         投稿日時：<%= post1.created_at.in_time_zone('Tokyo') %>
-        完了
-        <%= link_to '削除', post_path(post1), method: :delete, data: {confirm: "削除しますか？"}, class:'post-destroy' %>
+        <b id="finish">未完了</b>
+        <%= link_to '削除', post_path(post1), method: :delete, data: {confirm: "削除しますか？"}, class:'post-destroy', id:"trash" %>
       </div>
       <div class="post-content">
         <%= post1.content %>
@@ -38,8 +38,8 @@
     <div class="post2">
       <div class="post-date">
         投稿日時：<%= post2.created_at.in_time_zone('Tokyo') %>
-        完了
-        <%= link_to '削除', post_path(post2), method: :delete, data: {confirm: "削除しますか？"}, class:'post-destroy' %>
+        <b id="finish">未完了</b>
+        <%= link_to '削除', post_path(post2), method: :delete, data: {confirm: "削除しますか？"}, class:'post-destroy', id:"trash" %>
       </div>
       <div class="post-content">
         <%= post2.content %>
