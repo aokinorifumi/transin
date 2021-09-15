@@ -1,18 +1,18 @@
 <%= form_with model: @item, url: items_path, method: :post, local: true do |f|%>
   <div class="weight-bold-text">
     カテゴリー
-    <span class="indispensable">必須</span><br />
+    <span class="indispensable">(必須)</span><br />
   <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
   </div>
 
-  <div class="field">
-    <%= f.label :name, "名称(分類)" %><br />
-    <%= f.text_field :name, id:"prototype_title" %>
+  <div class="weight-bold-text">
+    <%= f.label :name, "名称(必須)" %><br />
+    <%= f.text_field :name, id:"irem-category" %>
   </div>
 
-  <div class="field">
-    <%= f.label :price, "価格" %><br />
-    <%= f.text_field :price, class: :form__text, id:"prototype_catch_copy" %>
+  <div class="weight-bold-text">
+    <%= f.label :price, "価格(必須)" %><br />
+    ￥<%= f.text_field :price, class: :form__text, id:"item-category" %>
   </div>
 
   <div class="weight-bold-text">

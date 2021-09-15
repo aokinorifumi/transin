@@ -1,17 +1,19 @@
 <div class="card">
   <%= link_to image_tag(item.image, class: :card__img ), edit_item_path(item)%>
   <div class="card__body">
+    <div class="card__name">
     <%= link_to item.name, edit_item_path(item), class: :card__title%>
-    <p class="card__summary">
-      <span><%= item.price %>円<br></span>
-    </p>
-    <div class="card__day">
-    <%= link_to item.delivery_month.name, edit_item_path(item), class: :card__title%>
-    <%= link_to item.delivery_day.name, edit_item_path(item), class: :card__title%>
-    <%= link_to item.delivery_time.name, edit_item_path(item), class: :card__title%>
     </div>
+      <div class="card__day">
+      <%= link_to item.delivery_month.name, edit_item_path(item), class: :card__title%>
+      <%= link_to item.delivery_day.name, edit_item_path(item), class: :card__title%>
+      <%= link_to item.delivery_time.name, edit_item_path(item), class: :card__title%>
+      </div>
     <p class="card__summary">
       <span><%= item.detail %><br></span>
+    </p>
+    <p class="card__summary">
+      <span><%= item.price %>円<br></span>
     </p>
   </div>
 </div>

@@ -174,11 +174,17 @@ a {
   margin-bottom: 16px;
 }
 .card__title {
-  display: block;
   font-size: 20px;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   font-weight: bold;
 }
+
+.card__name{
+  display: flex;
+}
+
+.card__day
+
 .card__summary {
   font-size: 16px;
 }
