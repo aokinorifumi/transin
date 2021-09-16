@@ -13,24 +13,6 @@
   <body>
     <header class="header">
       <%= link_to image_tag("backlogo3.png", class: :logo2), root_path %>
-      <div class="inner">
-        <div class="nav">
-          <div class="nav__left">
-          </div>
-          <%# ログインしているときは以下を表示するようにしましょう %>
-            <%# <div class="nav__right"> %>
-              <%# <%= link_to "ログアウト", root_path, class: :nav__logout %>
-              <%# <%= link_to "New Proto", root_path, class: :nav__btn %>
-            <%# </div> %>
-          <%# // ログインしているときは上記を表示するようにしましょう %>
-          <%# ログインしていないときは以下を表示するようにしましょう %>
-          <%#  <div class="nav__right">
-              <%= link_to "ログイン", root_path, class: :nav__btn %>
-            <%#  <%= link_to "新規登録", root_path, class: :nav__btn %>
-            </div>
-          <%# // ログインしていないときは上記を表示するようにしましょう %>
-        </div>
-      </div>
     </header>
     <%= yield %>
     <div>
@@ -39,6 +21,11 @@
       <%= image_tag 'icon_camera.png' , size: '185x50' ,class: "purchase-btn-icon" %>
     <% end %>
     </div>
+    <div>
+    <%= link_to(root_path, class: 'purchase-btn3') do %>
+      <span class='purchase-btn-text'>間取り </span>
+      <%= image_tag 'icon_home.png' , size: '185x50' ,class: "purchase-btn-icon" %>
+    <% end %>
     <div>
     <%= link_to(posts_path, class: 'purchase-btn2') do %>
       <span class='purchase-btn-text'>TO DO </span>
