@@ -17,7 +17,7 @@
     <%= image_tag "square.png", class:"square2" %>
       <div>
         <% @rooms.each do |room| %>
-        <%= image_tag(room.image, class: :room__img) %>
+        <%= image_tag room.image, class: :room__img if room.image.attached? %>
         <% end %>
       </div>
     </div>
@@ -41,17 +41,17 @@
         <%= f.text_area :message, class: :message__text, id:"prototype_concept" %>
       </div>
 
-      <%# <div class="message-enter"> %>
-        <%# <%= f.submit "投稿する", class: :form__btn  %>
-      <%# </div> %>
+       <div class="message-enter">
+         <%= f.submit "投稿する", class: :form__btn  %>
+       </div> 
     </div>
     <%end%>
 
 
-    <%# <% @rooms.each do |room|%>
-      <%# <div class="room-message">
+    <% @rooms.each do |room|%>
+      <div class="room-message">
         <%= room.message %>
-      <%# </div> %>
-    <%# <%end%> 
+      </div> 
+    <%end%> 
   </div>
 </main>
