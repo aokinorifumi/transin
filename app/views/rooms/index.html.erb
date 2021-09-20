@@ -41,17 +41,17 @@
         <%= f.text_area :message, class: :message__text, id:"prototype_concept" %>
       </div>
 
-      <div class="message-enter">
-        <%= f.submit "投稿する", class: :form__btn  %>
-      </div>
+      <%# <div class="message-enter"> %>
+        <%# <%= f.submit "投稿する", class: :form__btn  %>
+      <%# </div> %>
     </div>
     <%end%>
 
 
-    <% @rooms.each do |room|%>
-      <div class="room-message">
+    <%# <% @rooms.each do |room|%>
+      <%# <div class="room-message">
         <%= room.message %>
-      </div>
-    <%end%>
+      <%# </div> %>
+    <%# <%end%> 
   </div>
 </main>
