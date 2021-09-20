@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   get 'items/search'
   resources :items
   resources :posts, only: [:index, :create, :destroy]
-  
+  resources :rooms, only: [:index, :create]
 end

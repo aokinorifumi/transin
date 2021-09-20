@@ -42,13 +42,14 @@ git cloneしてから、ローカルで動作をさせるまでに必要なコ�
 
 - has_many :items
 - has_many :posts
+- has_many :rooms
 
 
 ## item テーブル
 
 | Column            | Type          | Options     |
 | ----------------- | ------------- | ----------- |
-| image             | string        | null: false |
+| image             | ActiveStorage | null: false |
 | category          | integer       | null: false |
 | name              | string        | null: false |
 | price             | integer       | null: false |
@@ -68,6 +69,21 @@ git cloneしてから、ローカルで動作をさせるまでに必要なコ�
 | Column            | Type          | Options     |
 | ----------------- | ------------- | ----------- |
 | content           | text          | null: false |
+| user              | references    |             |
+
+### Association
+
+- belongs_to :user
+
+
+## room テーブル
+
+| Column            | Type          | Options     |
+| ----------------- | ------------- | ----------- |
+| image             | ActiveStorage |             |
+| beside_id         | integer       | null: false |
+| vertical_id       | integer       | null: false |
+| message           | text          | null: false |
 | user              | references    |             |
 
 ### Association

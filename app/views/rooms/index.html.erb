@@ -1,0 +1,57 @@
+<main class="main">
+  <div class="inner">
+    <%= form_with model: @room, url: rooms_path, method: :post, local: true do |f|%>
+      <div class="top-field">
+        <div class="field">
+          <%= f.label :image, "間取り画像" %><br />
+          <%= f.file_field :image, id:"prototype_image" %>
+        </div>
+
+        <div class="img-enter">
+          <%= f.submit "保存する", class: :form__btn  %>
+        </div>
+      </div>
+    <%end%>
+
+    <div class="square">
+    <%= image_tag "square.png", class:"square2" %>
+      <div>
+        <% @rooms.each do |room| %>
+        <%= image_tag(room.image, class: :room__img) %>
+        <% end %>
+      </div>
+    </div>
+
+    <%= form_with model: @room, url: rooms_path, method: :post, local: true do |f|%>
+      <div class="room-form">
+      <div class="coordinate">
+        <div class="weight-bold-text">
+          横軸
+          <%= f.collection_select(:beside_id, Beside.all, :id, :name, {}, {class:"select-box", id:"beside-category"}) %>
+        </div>
+
+        <div class="weight-bold-text">
+          縦軸
+        <%= f.collection_select(:vertical_id, Vertical.all, :id, :name, {}, {class:"select-box", id:"vertical-category"}) %>
+        </div>
+      </div>
+
+      <div class="field">
+        <%= f.label :message, "配置内容" %><br />
+        <%= f.text_area :message, class: :message__text, id:"prototype_concept" %>
+      </div>
+
+      <div class="message-enter">
+        <%= f.submit "投稿する", class: :form__btn  %>
+      </div>
+    </div>
+    <%end%>
+
+
+    <% @rooms.each do |room|%>
+      <div class="room-message">
+        <%= room.message %>
+      </div>
+    <%end%>
+  </div>
+</main>

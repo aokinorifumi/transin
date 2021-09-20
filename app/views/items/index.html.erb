@@ -1,7 +1,7 @@
 <main class="main">
   <div class="inner">
-    <div>
-      <%= search_form_for @p, url: items_search_path do |f| %>
+    <%= search_form_for @p, url: items_search_path do |f| %>
+      <div>
       <%= f.label :category_eq, 'カテゴリー' %>
       <%= f.collection_select :category_id_eq, Category.all, :id, :name,  include_blank: '指定なし' %>
       <br>
@@ -9,14 +9,8 @@
       <%= f.collection_select :delivery_day_id_eq, DeliveryDay.all, :id, :name, include_blank: '指定なし'%> 
       <br>
       <%= f.submit '検索' %>
-      <% end %>
-    </div>
-    <%# ログインしているときは以下を表示する %>
-      <%# <div class="greeting"> %>
-        <%# こんにちは、 %>
-        <%# <%= link_to "ユーザー名さん", root_path, class: :greeting__link%>
-      <%# </div> %>
-    <%# // ログインしているときは上記を表示する %>
+      </div>
+    <% end %>
     
     <div class="card__wrapper">
       <%= render partial: 'item', collection: @items %>
