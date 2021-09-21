@@ -1,6 +1,6 @@
 # transport interior  
 転居をする際の事柄全般を管理することを目的とするアプリケーションです。日程管理、タスク管理、インテリアの配置の確認が出来ます。現在製作途中の為、実装された項目をGIFで記述していきます。  
-![demo](https://gyazo.com/31c15dcf381f3cd93e427ff756b2a785.gif)
+![demo](https://gyazo.com/9ec477f5ba8e220b62215995ca4bafb2.gif)
 
 
 # URL  
@@ -33,24 +33,18 @@
 
 # 実装した機能についての画像やGIFおよびその説明  
 アイテム追加機能  
-![demo]
-(https://gyazo.com/fa2c6130e27e8d668d21f742a581bf8f.gif)
+![demo](https://gyazo.com/fa2c6130e27e8d668d21f742a581bf8f.gif)
 
 検索機能(カテゴリーと期日で検索出来ます)  
-![demo]
-(https://gyazo.com/2f17b8feca59e821d2ff1829be98fe53.gif)  
-![demo]
-(https://gyazo.com/9cb0d8980a1d8a51fc7cd31a80f9cd9a.gif)  
+![demo](https://gyazo.com/2f17b8feca59e821d2ff1829be98fe53.gif)  
+![demo](https://gyazo.com/9cb0d8980a1d8a51fc7cd31a80f9cd9a.gif)
 
 予定管理機能(チェックするボックスによって表示位置が変わります)  
-![demo]  
-(https://gyazo.com/678ac99a6c68bfed14b7c267eb362672.gif)  
-![demo]
-(https://gyazo.com/102b0d9610e5b77956d08cd0750ac6d5.gif)  
+![demo](https://gyazo.com/678ac99a6c68bfed14b7c267eb362672.gif)  
+![demo](https://gyazo.com/102b0d9610e5b77956d08cd0750ac6d5.gif)
 
 間取り機能(平面図を添付し、配置場所を軸で管理します。メッセージ機能含み実装途上)  
-![demo]  
-(https://gyazo.com/ee8109d74f59698e9ed2bcf0ab44f3fb.gif)  
+![demo](https://gyazo.com/ee8109d74f59698e9ed2bcf0ab44f3fb.gif)
 
 # 実装予定の機能  
 ・家具配置をする際、レイアウトを確認。(現在実装中)  
