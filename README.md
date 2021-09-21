@@ -1,7 +1,7 @@
 # transport interior  
 転居をする際の事柄全般を管理することを目的とするアプリケーションです。日程管理、タスク管理、インテリアの配置の確認が出来ます。現在製作途中の為、実装された項目をGIFで記述していきます。  
 ![demo]
-(https://gyazo.com/31c15dcf381f3cd93e427ff756b2a785/raw)
+(https://gyazo.com/31c15dcf381f3cd93e427ff756b2a785.gif)
 
 
 # URL  
