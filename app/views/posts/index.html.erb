@@ -1,7 +1,7 @@
 <div class="todomain">
 <%= form_with model: @post, local: true do |f|%>
   <div class="area">
-    <%= f.label :format, "Must or Hope",id:"todo__title" %><br />
+    <%= f.label :format, "Must or Want",id:"todo__title" %><br />
     <%= f.radio_button :format, 1, id:"todo__btn" %>
     <%= f.radio_button :format, 2, id:"todo__btn2" %>
   </div>
@@ -33,7 +33,7 @@
   </div>
 
   <div class= "schedule2">
-  Hope
+  Want
   <% @post2.each do |post2| %>
     <div class="post2">
       <div class="post-date">
