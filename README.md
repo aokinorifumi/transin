@@ -4,7 +4,6 @@
 ![demo](https://gyazo.com/1a56246e1f0db3cdd6f268e53b1aa59b.gif)
 <br/>
 <br/>
-    
 # URL  
 デプロイ完了後記載致します。
 
