@@ -49,9 +49,9 @@
 <br/>
 予定管理機能(チェックするボックスによって表示位置が変わります)  
   
-![demo](https://gyazo.com/678ac99a6c68bfed14b7c267eb362672.gif)
+![demo](https://gyazo.com/29b68b56fd0ff9a9f2487f937c37628b.gif)
   
-![demo](https://gyazo.com/102b0d9610e5b77956d08cd0750ac6d5.gif)
+![demo](https://gyazo.com/5c11bd13e55135055b6c4d8ff2fdca77.gif)
 <br/>
 <br/>
 <br/>
