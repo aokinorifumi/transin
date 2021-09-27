@@ -53,9 +53,9 @@ ActiveRecord::Schema.define(version: 2021_09_17_175902) do
   end
 
   create_table "rooms", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "beside_id"
-    t.integer "vertical_id"
-    t.text "message"
+    t.integer "beside_id", default: 1
+    t.integer "vertical_id", default: 1
+    t.string "message", default: "投稿時間管理"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
