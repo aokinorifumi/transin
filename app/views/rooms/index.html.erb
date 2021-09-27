@@ -24,18 +24,11 @@
 
     <%= form_with model: @room, url: rooms_path, method: :post, local: true do |f|%>
       <div class="room-form">
-        <div class="coordinate">
-          <div class="weight-bold-text">
-            横軸
-            <%= f.collection_select(:beside_id, Beside.all, :id, :name, {}, {class:"select-box", id:"beside-category"}) %>
-          </div>
-
-          <div class="weight-bold-text">
-            縦軸
-          <%= f.collection_select(:vertical_id, Vertical.all, :id, :name, {}, {class:"select-box", id:"vertical-category"}) %>
-          </div>
-        </div>
-
+        横軸
+        <%= f.collection_select(:beside_id, Beside.all, :id, :name, {}, {class:"select-box", id:"beside-category"}) %>
+        縦軸
+        <%= f.collection_select(:vertical_id, Vertical.all, :id, :name, {}, {class:"select-box", id:"vertical-category"}) %>
+  
         <div class="field">
           <%= f.label :message, "配置内容" %><br />
           <%= f.text_area :message, class: :message__text, id:"prototype_concept" %>
@@ -54,7 +47,7 @@
         <%= room.beside.name %>軸
         <%= room.vertical.name %>軸
         投稿日時：<%= room.created_at.in_time_zone('Tokyo') %>
-        <%# <%= link_to '削除', post_path(post2), method: :delete, data: {confirm: "削除しますか？"}, class:'post-destroy', id:"trash" %> %>
+        <%= link_to '削除', room_path(room), method: :delete, data: {confirm: "削除しますか？"}, class:'post-destroy', id:"trash" %>
       </div>
       <div class="post-content">
         <%= room.message %>
